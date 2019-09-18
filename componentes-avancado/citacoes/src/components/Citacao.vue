@@ -1,14 +1,25 @@
 <template>
     <div class="citacao">
         <slot name="autor"></slot> 
-        <slot name="texto"></slot> 
+        <slot></slot> 
         <slot name="fonte"></slot> 
     </div>
 </template>
 
 <script>
 export default {
-
+    created() {
+        console.log('created');        
+    },
+    destroyed() {
+        console.log('destroyed');
+    },
+    activated() {
+        console.log('activated');        
+    },
+    deactivated() {
+        console.log('deactivated');
+    }
 }
 </script>
 
