@@ -1,0 +1,29 @@
+const notas = [7.7, 6.5, 5.2, 8.9, 3.6, 7.1, 9.0]
+
+// // Sem callback
+// let notasBaixas = []
+// let notasAltas = []
+
+// for (let i in notas) {
+//   if (notas[i] <= 7) {
+//     notasBaixas.push(notas[i])
+//   } else {
+//     notasAltas.push(notas[i])
+//   }
+// }
+
+// console.log (notasBaixas)
+// console.log (notasAltas)
+
+// Com callback
+
+notasBaixas = notas.filter(function(nota){
+  return nota < 7
+})
+console.log(notasBaixas)
+
+const notasBaixas3 = notas.filter((nota) => {
+  return nota < 5
+})
+
+console.log(notasBaixas3)
